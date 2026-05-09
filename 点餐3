@@ -1,0 +1,6 @@
+ int main()
+{
+  int n,k;
+         printf("\n\n\n\n\t\t\t���˳�ϵͳ.....");
+         return 0; 
+}
