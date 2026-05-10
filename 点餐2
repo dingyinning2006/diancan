@@ -1,6 +1,0 @@
- int main()
-{
-  int n,k;
-       
-         return 0; 
-}
