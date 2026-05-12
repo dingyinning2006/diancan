@@ -45,9 +45,11 @@ int Log_in(pList head)
 	 struct staff_t *data;
 	 char name[10] = {0};// 存放输入的用户名
 	 char psd[8] = {0}; // 存放输入的密码
-     char role[3][10] ={"服务员","经理","管理员"};
+     char role[3][10] ={"服务员","顾客"};
+
      Ordernum_get(time,NULL);
 	 sscanf(time,"%4d%2d%2d",&a,&b,&c);
+
 	 while(1)
  { 
       system("cls");
@@ -93,9 +95,20 @@ void Login_init(FILE *fp,pList head)
 	data->acNO = 1000;// 初始化超级管理员的参数
 	strcpy(data->acName,"admin");
 	strcpy(data->psd,"123456");
-	data->role = 2;// 管理员身份
+	data->role = 0;// 管理员身份
 	data->flag = 1;
-	List_add(head,data);// 添加到链表
-	File_write(fp,head,sizeof(struct staff_t),0);// 写入文件   
+	List_add(head,data);// 添加到链表 
+
+
+    // 初始化默认顾客账号（可选）
+    data = (struct staff_t *)malloc(sizeof(struct staff_t));
+    data->acNO = 1001;  // 顾客账号
+    strcpy(data->acName,"customer");
+    strcpy(data->psd,"000000");
+    data->role = 1;  // 顾客身份（对应role数组下标1）
+    data->flag = 1;
+    List_add(head,data);  // 添加到链表
+    
+    File_write(fp,head,sizeof(struct staff_t),0);  // 写入文件 
 
 }

@@ -3,7 +3,7 @@
 #include "..\\List\List.h"
 #include "..\\Staff\staff.h"
 #include "..\\File\File.h"
-#include "..\\Order\Order.h"
+#include "..\\Customer\Order.h"
 #include "..\\Glb_putstring\\Glb_putstring.h"
 
 /************************************************************************
