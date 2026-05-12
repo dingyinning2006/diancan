@@ -4,7 +4,7 @@
 #include <conio.h>
 #include "Customer.h"
 
-// 顾客主菜单
+// 顾客菜单
 int Ui_Customer()
 {
     int n;
