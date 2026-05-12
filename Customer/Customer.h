@@ -3,16 +3,16 @@
 
 #include "Customer.h"
 
-// 顾客主界面
+// 顾客界面
 int Ui_Customer();
 
-// 自助点菜
+// 点菜
 void Customer_OrderDishes(void);
 
-// 自助结账
+// 结账
 void Customer_CheckOut(void);
 
-// 订单查询（仅已买/未买）
+// 订单查询
 void Customer_OrderSearch(void);
 
 #endif
