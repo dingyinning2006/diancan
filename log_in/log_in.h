@@ -1,9 +1,8 @@
 #ifndef _LOG_IN_H_
 #define _LOG_IN_H_
 #include "..\\List\List.h"
-#include "..\\Staff\staff.h"
 #include "..\\File\File.h"
-#include "..\\Customer\Order.h"
+#include "..\\Customer\Customer.h"
 #include "..\\Glb_putstring\\Glb_putstring.h"
 
 /************************************************************************
